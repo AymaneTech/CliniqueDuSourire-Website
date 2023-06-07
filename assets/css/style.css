@@ -108,6 +108,19 @@
   color: #fff !important;
 }
 
+.img-reseize{
+  height: 350px;
+}
+
+.doctor-img{
+  width: 400px;
+  height: 500px;
+  border-radius: 50px;
+}
+.doctor-details{
+  margin: 0 450px;
+}
+
 @media (min-width: 1400px) {
   .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl, .container-xxxl {
     max-width: 1320px;
@@ -5403,13 +5416,13 @@ input[type=color] {
   list-style-type: none;
 }
 .slider-active .slick-dots li.slick-active button {
-  background-color: #40d0c6;
+  background-color: #F28500;
 }
 .slider-active .slick-dots li button {
   height: 12px;
   width: 12px;
   border-radius: 50%;
-  background-color: var(--it-common-white);
+  background-color: #F28500;
   font-size: 0;
   transition: 0.3s;
 }
