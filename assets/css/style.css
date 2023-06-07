@@ -79,10 +79,33 @@
   --it-grey-7: #636363;
   --it-grey-8: #f2f4f6;
   --it-text-body: #4e4e4e;
-  --it-theme-1: #40d0c6;
+  --it-theme-1: #F28500;
   --it-theme-2: linear-gradient(15deg, rgb(238, 92, 10) 0%, rgb(254, 188, 0) 100%);
   --it-border-1: #dddddd;
   --it-border-2: #595252;
+}
+
+/*my code */
+.flag-size{
+  width: 25px;
+  height: 20px;
+  margin-right: 15px;
+  
+}
+
+.flag-back{
+  background-color: #fff !important;
+}
+.flag-back li a{
+  color: #000 !important;
+}
+.flag-back li a:hover{
+  color: #F28500 !important;
+  transition: 0.5s;
+}
+
+.socialmedia a i{
+  color: #fff !important;
 }
 
 @media (min-width: 1400px) {
@@ -3311,7 +3334,8 @@ input[type=color] {
   display: inline-block;
 }
 .notification__left span:hover {
-  background: linear-gradient(15deg, rgb(238, 92, 10) 0%, rgb(254, 188, 0) 100%);
+  background: black ;
+  text-decoration: underline !important;
   background-clip: border-box;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
