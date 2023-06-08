@@ -110,16 +110,70 @@
 
 .img-reseize{
   height: 350px;
-}
-
+}/*
 .doctor-img{
   width: 400px;
   height: 500px;
   border-radius: 50px;
+  margin: 10px !important;
+} */
+
+
+
+.doctor-img img{
+  display: flex;
+  width: 1000px;
+  height: 400px;
+  border-radius: 15px;  
 }
 .doctor-details{
-  margin: 0 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+.biographie-section{
+  margin-left: 100px;
+}
+.biographie-section h1{
+  font-size: 50px;
+  line-height: 150px;
+  color: var(--it-theme-1);
+}
+.span{
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 80px ;
+}
+.useful-links{
+  list-style: none;
+}
+
+.useful-links li a{
+  color: #fff !important;
+  line-height: 35px;
+}
+.useful-links li a:hover{
+  color: var(--it-theme-1) !important;
+}
+
+.image-doctor{
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+}
+
+.doctor-name{
+  background-color: #D5D5DD;
+  width: 350px;
+  text-align: center;
+  border-radius: 15px;
+}
+
+
+
+
+
+
+
 
 @media (min-width: 1400px) {
   .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl, .container-xxxl {
