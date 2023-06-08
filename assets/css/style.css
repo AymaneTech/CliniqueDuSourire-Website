@@ -107,10 +107,10 @@
 .socialmedia a i{
   color: #fff !important;
 }
-/* 
+
 .img-reseize{
   height: 350px;
-}
+}/*
 .doctor-img{
   width: 400px;
   height: 500px;
@@ -155,6 +155,24 @@
 .useful-links li a:hover{
   color: var(--it-theme-1) !important;
 }
+
+.image-doctor{
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+}
+
+.doctor-name{
+  background-color: #D5D5DD;
+  width: 350px;
+  text-align: center;
+  border-radius: 15px;
+}
+
+
+
+
+
+
 
 
 @media (min-width: 1400px) {
