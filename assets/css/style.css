@@ -168,8 +168,27 @@
   border-radius: 15px;
 }
 
+.service-text{
+  width: 700px;
+  line-height: 70px;
+}
+.service-text ol li{
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 40px;
+  color: #000;
+}
 
+.service-text h3{
+  color: var(--it-theme-1);
+}
 
+.service-img img{
+  width: 500px;
+  height: 500px;
+  border-bottom-left-radius: 100px;
+  border-top-right-radius: 100px;
+}
 
 
 
