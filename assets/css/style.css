@@ -12755,9 +12755,15 @@ input[type=color] {
   position: relative;
   z-index: 2;
 }
+.adress-item{
+  padding: 44px 20px;
+}
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .contact__item {
     padding: 55px 20px;
+  }
+  .adress-item{
+    padding: 33px 20px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -13549,8 +13555,6 @@ input[type=color] {
   }
 }
 .cta__bg {
-  background-color: var(--it-theme-1);
-  border-radius: 50px;
   padding: 72px 60px;
   padding-left: 100px;
 }
@@ -18910,6 +18914,8 @@ p.checkout-coupon input[type=text]:focus {
 /*----------------------------------------*/
 /*  14. project css start
 /*----------------------------------------*/
+
+
 .footer__bg {
   position: relative;
   background-position: center;
