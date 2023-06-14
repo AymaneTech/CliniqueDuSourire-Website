@@ -26,6 +26,7 @@
    <link rel="stylesheet" href="assets/css/magnific-popup.css">
    <link rel="stylesheet" href="assets/css/spacing.css">
    <link rel="stylesheet" href="assets/css/style.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -57,7 +58,7 @@
                <div class="col-xl-6 col-lg-6 col-md-8 col-sm-6">
                   <div class="notification__left text-start text-sm-end">
                      <span>
-                        <a href="maito:Hello@cliniquedusourire.ma"><i class="far fa-envelope"></i>
+                        <a href="mailto:Hello@cliniquedusourire.ma"><i class="far fa-envelope"></i>
                            <span class="__cf_email__"
                               data-cfemail="58303d3434371821372d2a35393134763b3735">Hello@cliniquedusourire.ma</span></a>
                         </a>
@@ -114,7 +115,9 @@
                   <div class="header__content-box d-flex justify-content-end">
                      <div class="header__search-box p-relative d-none d-md-block">
                         <form action="#">
-                           <input type="search" placeholder="Search">
+                           <input type="text" id="searchInput" placeholder="Enter search term">
+<button onclick="searchInPage()">Search</button>
+
                            <div class="header__search-icon">
                               <span><i class="fal fa-search"></i></span>
                            </div>
@@ -122,7 +125,7 @@
                      </div>
                      <div class="header__bars pl-20">
                         <button class="it-menu-bar">
-                           <svg id="header_area" data-name="header area" xmlns="http://www.w3.org/2000/svg" width="30"
+                            <svg id="header_area" data-name="header area" xmlns="http://www.w3.org/2000/svg" width="30"
                               height="30" viewbox="0 0 30 30">
                               <defs>
                                  <style>
@@ -176,8 +179,7 @@
             </a>
          </div>
          <div class="itoffcanvas__text">
-            <p>Suspendisse interdum consectetur libero id. Fermentum leo vel orci porta non. Euismod viverra nibh
-               cras pulvinar suspen.</p>
+            <p>Notre approche est unique autour du travail connu et nous savons qu'il ne fonctionne pas avec des facteurs vérifiés en jeu.</p>
          </div>
          <div class="mobile-menu"></div>
          <div class="itoffcanvas__info">
@@ -188,8 +190,8 @@
                </div>
                <div class="itoffcanvas__info-address">
                   <span>Email</span>
-                  <a href="maito:Hello@cliniquedusourire.ma"><span class="__cf_email__"
-                        data-cfemail="58303d3434371821372d2a35393134763b3735">Hello@cliniquedusourire.ma</span></a>
+                  <a href="mailto:Hello@cliniquedusourire.ma"><span class="__cf_email__"
+                        >Hello@cliniquedusourire.ma</span></a>
                </div>
             </div>
             <div class="it-info-wrapper mb-20 d-flex align-items-center">
@@ -238,9 +240,9 @@
                      <div class="col-xxl-7 col-xl-8 col-lg-8 col-md-12">
                         <div class="slider__content-box z-index">
                            <div class="slider__section-title pb-10">
-                              <h4 class="section-subtitle text-white ">Les experts en dentisterie à Marrakech!</h4>
+                              <h4 class=" big-title section-subtitle text-white ">Les experts en dentisterie à Marrakech!</h4>
                               <div class="slider__title-shape-wrap p-relative">
-                                 <h2 class="hero-title">Clinique du Sourire<span></span>
+                                 <h2 class="big-title hero-title">Clinique du Sourire<span></span>
                                  </h2>
 
                               </div>
@@ -252,7 +254,7 @@
                                     class="far fa-plus"></i></a>
                            </div>
                            <div class="slider__social-box-2">
-                              <span>Follow Social :</span>
+                              <span class="big-title">Follow Social :</span>
                               <a href="#"><i class="fab fa-facebook-f"></i></a>
                               <a href="#"><i class="fab fa-twitter"></i></a>
                               <a href="#"><i class="fab fa-instagram"></i></a>
@@ -615,53 +617,25 @@
                         </div>
                         <div class="col-xl-7 col-lg-7 wow tpfadeRight" data-wow-duration=".9s" data-wow-delay=".5s">
                            <div class="it-doctor-details__content-box">
-                              <h4 class="it-doctor-details__content-title">About Me:</h4>
+                              <h4 class="it-doctor-details__content-title">A propos du Docteur:</h4>
                               <div class="it-doctor-details__content">
                                  <div class="it-doctor-details__text">
-                                    <p>About : Phis are bound to ensue; and equal blame belongs to those who <br>
-                                       through weakness of will, which is the same as through.We have the <br>
-                                       and industry expertise to develop solutions that can connect.</p>
+                                    <p>Le Docteur YASSI, est orthodontiste exclusif à Marrakech. Nous corrigeons les encombrements dentaires et certaines irrégularités faciales en déplaçant les dents, en guidant la croissance et en corrigeant les malocclusions dentaires. Nous traitons également des troubles tels que l'apnée du sommeil ou les dents incluses. Nous mettons à votre disposition notre savoir faire ainsi que les dernières techniques de soins pour que votre expérience avec l'orthodontie soit agréable et satisfaisante. Pour un sourire ravissant, prenez-rendez-vous dès maintenant!</p>
                                  </div>
                                  <div class="it-doctor-details__content-list">
                                     <ul>
-                                       <li><i class="fal fa-check-circle"></i><span>First Name: Boran</span></li>
-                                       <li><i class="fal fa-check-circle"></i><span>Address: Dubai</span></li>
-                                       <li><i class="fal fa-check-circle"></i><span>Age: 24 Years</span></li>
-                                       <li><i class="fal fa-check-circle"></i><span>Nationality: Tunisian</span></li>
-                                       <li><i class="fal fa-check-circle"></i><span> Freelance: Available</span></li>
-                                       <li><i class="fal fa-check-circle"></i><span>Email: <a
-                                                href="https://ordainit.com/cdn-cgi/l/email-protection" class="__cf_email__"
-                                                data-cfemail="40392f35002d21292c6e232f2d">[email&#160;protected]</a></span>
-                                       </li>
+                                       <li><i class="fal fa-check-circle"></i><span> Chirurgien Dentiste</span></li>
+                                       <li><i class="fal fa-check-circle"></i><span>Spécialiste en Orthodontie (Enfants et Adultes)</span></li>
+                                       <li><i class="fal fa-check-circle"></i><span>Diplômé de la Faculté de Médecine Dentaire de Rabat, Maroc</span></li>
+                                       <li><i class="fal fa-check-circle"></i><span>Diplômé de l'Université de Bordeaux, France</span></li>
+                                       <li><i class="fal fa-check-circle"></i><span> Ancien Chirurgien Dentiste des FAR</span></li>
                                     </ul>
-                                 </div>
-                                 <div class="it-doctor-details__button">
-                                    <a class="main-btn" href="doctor.html">
-                                       <span>Team More</span>
-                                    </a>
                                  </div>
                               </div>
                            </div>
                         </div>
                      </div>
-                     <div class="row">
-                        <div class="it-doctor-details__text-2">
-                           <p class="pb-20 wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".7s">The majority have
-                              suffered alteration in some form, by injected humour, or randomised words which don't look even
-                              slightly believable. <br> If you are going to use a passage of Lorem Ipsum, you need to be sure
-                              there isn't anything embarrassing hidden in <br> the middle of text. All the Lorem Ipsum
-                              generators on the Internet tend to repeat predefined chunk.</p>
-                           <p class="pb-15 wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".9s">The majority have
-                              suffered alteration in some form, by injected humour, or randomised words which don't look even
-                              slightly believable. <br>If you re going to use a passage of Lorem Ipsum, you need to be sure
-                              there isn't anything embarr assing hidden in ge editors now <br>the middle of text. All the
-                              Lorem Ipsum generators on the Internet tend to repeat predefined chunk readable content of a
-                              page when <br>looking at its layout. The point of using Lorem Ipsum is that it has a
-                              more-or-less normal distribution of letters, as opposed to using ' <br>Content here, content
-                              here', making it look like readable English. Many desktop publishing packages and web pa use
-                              Lorem Ipsum <br>as their default mode .</p>
-                        </div>
-                     </div>
+                     
                   </div>
                </div>
             </div>
@@ -721,41 +695,24 @@
                   <div class="contact-form__wrapper-box contact-form__wrapper-bg text-center z-index"
                      data-background="assets/img/contact/contact-bg-1.png">
                      <div class="contact-form__form-text pb-40">
-                        <h4 class="contact-form__title-sm">appartements</h4>
+                        <h4 class="contact-form__title-sm">Rendez-vous</h4>
                         <i>disponible 24/7 Support health </i>
                      </div>
-                     <form action="#">
-                        <div class="nice-select" tabindex="0">
-                           <span class="current">New Patient*</span>
-                           <ul class="list">
-                              <li data-value="Property Type" class="option selected focus">New Patient*</li>
-                              <li data-value="Home Insurance" class="option">Old Patient</li>
-                           </ul>
-                        </div>
-                        <input type="text" placeholder="Your Name*">
-                        <div class="nice-select" tabindex="0">
-                           <span class="current">Patient Date*</span>
-                           <ul class="list">
-                              <li data-value="Property Type" class="option selected focus">Patient Date*</li>
-                              <li data-value="Home Insurance" class="option">Old Patient</li>
-                           </ul>
-                        </div>
-                        <input type="text" placeholder="Email or Phone*">
-                        <div class="nice-select" tabindex="0">
-                           <span class="current">Gender*</span>
-                           <ul class="list">
-                              <li data-value="Property Type" class="option selected focus">Female</li>
-                              <li data-value="Home Insurance" class="option">Male</li>
-                              <li data-value="Home Insurance" class="option">others</li>
-                           </ul>
+                     <form action="https://formspree.io/f/xdovqgok" method="POST">
+                        <input type="text" name="nom" placeholder="Votre nom*" >
+                       
+                        <input type="email" name="phone" placeholder="votre email*" >
+
+                        <input type="text" name="subject" placeholder="subject*" >
+                        <textarea class="form-control" name="message" placeholder="Ecrire un message" id="floatingTextarea2" style="height: 100px" ></textarea>
+                        <div class="contact-form__btn pt-20">
+                           <button type="submit" class="main-btn blue-bg tp-btn-hover alt-color-white" >ENVOYER
+                              <b></b>
+                              <i class="far fa-plus"></i>
+                           </button>
                         </div>
                      </form>
-                     <div class="contact-form__btn pt-20">
-                        <a class="main-btn blue-bg tp-btn-hover alt-color-white" href="#"><span>ENVOYER</span>
-                           <b></b>
-                           <i class="far fa-plus"></i>
-                        </a>
-                     </div>
+                     
                   </div>
                </div>
             </div>
@@ -885,7 +842,25 @@
    <script src="assets/js/imagesloaded-pkgd.js"></script>
    <script src="assets/js/ajax-form.js"></script>
    <script src="assets/js/main.js"></script>
-
+   <script>function searchInPage() {
+      var searchTerm = document.getElementById('searchInput').value; // Get the search term from an input field (change 'searchInput' to the ID of your input field)
+    
+      var pageContent = document.body.innerHTML; // Get the content of the entire web page
+    
+      var regex = new RegExp(searchTerm, 'gi'); // Create a regular expression with the search term and 'gi' for global case-insensitive search
+    
+      var matches = pageContent.match(regex); // Perform the search
+    
+      if (matches) {
+        // If matches are found
+        var searchCount = matches.length;
+        alert('Found ' + searchCount + ' matches for "' + searchTerm + '"');
+      } else {
+        // If no matches are found
+        alert('No matches found for "' + searchTerm + '"');
+      }
+    }
+    </script>
 </body>
 
 <!-- Mirrored from ordainit.com/Medinosi/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 07 Jun 2023 09:11:36 GMT -->
