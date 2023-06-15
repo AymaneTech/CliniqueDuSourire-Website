@@ -93,16 +93,23 @@
                                  <li><a href="dentisterie.html">Dentisterie esthétique</a></li>
                                  <li><a href="orthodontie.html">Orthodontie</a></li>
                                  <li><a href="blanchiment-dents.html">Blanchiment des dents</a></li>
-                                <li><a href="soin-urgence.html">Soin d’urgence</a></li>
-								<li><a href="implant-dentaire.html">Implants dentaires</a></li>
+                                 <li><a href="soin-urgence.html">Soin d’urgence</a></li>
+                                 <li><a href="implant-dentaire.html">Implants dentaires</a></li>
                               </ul>
                            </li>
                            <li><a href="contact.html" data-translations="rendez">Rendez-vous</a></li>
-                           <li class="has-dropdown"><a href="#" data-translations="selectLanguage"><i class="fa fa-globe"></i> Langues</a>
-                              <ul class="submenu flag-back">
-                                 <li><a href=""data-translations="french"><img class="flag-size" src="assets/img/flag/lang-french.png" alt="">
+
+
+
+                           <li class="has-dropdown"><a href="#" data-translations="selectLanguage"><i
+                                    class="fa fa-globe"></i> Langues</a>
+
+                              <ul id="language-select" class="submenu flag-back">
+                                 <li><a href="" value="french"><img class="flag-size"
+                                          src="assets/img/flag/lang-french.png" alt="">
                                        Français</a></li>
-                                 <li><a href=""data-translations="arabic"><img class="flag-size" src="assets/img/flag/lang-morocco.png" alt="">
+                                 <li><a href="" value="arabic"><img class="flag-size"
+                                          src="assets/img/flag/lang-morocco.png" alt="">
                                        Arabe</a></li>
 
                               </ul>
@@ -116,7 +123,6 @@
                      <div class="header__search-box p-relative d-none d-md-block">
                         <form action="#">
                            <input type="text" id="searchInput" placeholder="Enter search term">
-<button onclick="searchInPage()">Search</button>
 
                            <div class="header__search-icon">
                               <span><i class="fal fa-search"></i></span>
@@ -125,7 +131,7 @@
                      </div>
                      <div class="header__bars pl-20">
                         <button class="it-menu-bar">
-                            <svg id="header_area" data-name="header area" xmlns="http://www.w3.org/2000/svg" width="30"
+                           <svg id="header_area" data-name="header area" xmlns="http://www.w3.org/2000/svg" width="30"
                               height="30" viewbox="0 0 30 30">
                               <defs>
                                  <style>
@@ -179,7 +185,8 @@
             </a>
          </div>
          <div class="itoffcanvas__text">
-            <p>Notre approche est unique autour du travail connu et nous savons qu'il ne fonctionne pas avec des facteurs vérifiés en jeu.</p>
+            <p class="itoffcanvas__text">Notre approche est unique autour du travail connu et nous savons qu'il ne fonctionne pas avec des
+               facteurs vérifiés en jeu.</p>
          </div>
          <div class="mobile-menu"></div>
          <div class="itoffcanvas__info">
@@ -190,8 +197,8 @@
                </div>
                <div class="itoffcanvas__info-address">
                   <span>Email</span>
-                  <a href="mailto:Hello@cliniquedusourire.ma"><span class="__cf_email__"
-                        >Hello@cliniquedusourire.ma</span></a>
+                  <a href="mailto:Hello@cliniquedusourire.ma"><span
+                        class="__cf_email__">Hello@cliniquedusourire.ma</span></a>
                </div>
             </div>
             <div class="it-info-wrapper mb-20 d-flex align-items-center">
@@ -240,7 +247,8 @@
                      <div class="col-xxl-7 col-xl-8 col-lg-8 col-md-12">
                         <div class="slider__content-box z-index">
                            <div class="slider__section-title pb-10">
-                              <h4 class=" big-title section-subtitle text-white ">Les experts en dentisterie à Marrakech!</h4>
+                              <h4 class=" big-title section-subtitle text-white ">Les experts en dentisterie à
+                                 Marrakech!</h4>
                               <div class="slider__title-shape-wrap p-relative">
                                  <h2 class="big-title hero-title">Clinique du Sourire<span></span>
                                  </h2>
@@ -606,40 +614,50 @@
                   </div>
                </div>
             </div> -->
-            <div class="it-doctor-details__area mt-100 mb-60">
-               <div class="container">
-                  <div class="it-doctor-details__border">
-                     <div class="row align-items-center">
-                        <div class="col-xl-5 col-lg-5 wow tpfadeLeft" data-wow-duration=".9s" data-wow-delay=".3s">
-                           <div class="it-doctor-details__main-img text-center text-lg-start">
-                              <a href="#"><img class="image-doctor" src="assets/img/team/doctor.jpg" alt></a>
+      <div class="it-doctor-details__area mt-100 mb-60">
+         <div class="container">
+            <div class="it-doctor-details__border">
+               <div class="row align-items-center">
+                  <div class="col-xl-5 col-lg-5 wow tpfadeLeft" data-wow-duration=".9s" data-wow-delay=".3s">
+                     <div class="it-doctor-details__main-img text-center text-lg-start">
+                        <a href="#"><img class="image-doctor" src="assets/img/team/doctor.jpg" alt></a>
+                     </div>
+                  </div>
+                  <div class="col-xl-7 col-lg-7 wow tpfadeRight" data-wow-duration=".9s" data-wow-delay=".5s">
+                     <div class="it-doctor-details__content-box">
+                        <h4 class="it-doctor-details__content-title">A propos du Docteur:</h4>
+                        <div class="it-doctor-details__content">
+                           <div class="it-doctor-details__text">
+                              <p>Le Docteur YASSI, est orthodontiste exclusif à Marrakech. Nous corrigeons les
+                                 encombrements dentaires et certaines irrégularités faciales en déplaçant les dents, en
+                                 guidant la croissance et en corrigeant les malocclusions dentaires. Nous traitons
+                                 également des troubles tels que l'apnée du sommeil ou les dents incluses. Nous mettons
+                                 à votre disposition notre savoir faire ainsi que les dernières techniques de soins pour
+                                 que votre expérience avec l'orthodontie soit agréable et satisfaisante. Pour un sourire
+                                 ravissant, prenez-rendez-vous dès maintenant!</p>
                            </div>
-                        </div>
-                        <div class="col-xl-7 col-lg-7 wow tpfadeRight" data-wow-duration=".9s" data-wow-delay=".5s">
-                           <div class="it-doctor-details__content-box">
-                              <h4 class="it-doctor-details__content-title">A propos du Docteur:</h4>
-                              <div class="it-doctor-details__content">
-                                 <div class="it-doctor-details__text">
-                                    <p>Le Docteur YASSI, est orthodontiste exclusif à Marrakech. Nous corrigeons les encombrements dentaires et certaines irrégularités faciales en déplaçant les dents, en guidant la croissance et en corrigeant les malocclusions dentaires. Nous traitons également des troubles tels que l'apnée du sommeil ou les dents incluses. Nous mettons à votre disposition notre savoir faire ainsi que les dernières techniques de soins pour que votre expérience avec l'orthodontie soit agréable et satisfaisante. Pour un sourire ravissant, prenez-rendez-vous dès maintenant!</p>
-                                 </div>
-                                 <div class="it-doctor-details__content-list">
-                                    <ul>
-                                       <li><i class="fal fa-check-circle"></i><span> Chirurgien Dentiste</span></li>
-                                       <li><i class="fal fa-check-circle"></i><span>Spécialiste en Orthodontie (Enfants et Adultes)</span></li>
-                                       <li><i class="fal fa-check-circle"></i><span>Diplômé de la Faculté de Médecine Dentaire de Rabat, Maroc</span></li>
-                                       <li><i class="fal fa-check-circle"></i><span>Diplômé de l'Université de Bordeaux, France</span></li>
-                                       <li><i class="fal fa-check-circle"></i><span> Ancien Chirurgien Dentiste des FAR</span></li>
-                                    </ul>
-                                 </div>
-                              </div>
+                           <div class="it-doctor-details__content-list">
+                              <ul>
+                                 <li><i class="fal fa-check-circle"></i><span> Chirurgien Dentiste</span></li>
+                                 <li><i class="fal fa-check-circle"></i><span>Spécialiste en Orthodontie (Enfants et
+                                       Adultes)</span></li>
+                                 <li><i class="fal fa-check-circle"></i><span>Diplômé de la Faculté de Médecine Dentaire
+                                       de Rabat, Maroc</span></li>
+                                 <li><i class="fal fa-check-circle"></i><span>Diplômé de l'Université de Bordeaux,
+                                       France</span></li>
+                                 <li><i class="fal fa-check-circle"></i><span> Ancien Chirurgien Dentiste des FAR</span>
+                                 </li>
+                              </ul>
                            </div>
                         </div>
                      </div>
-                     
                   </div>
                </div>
+
             </div>
-      
+         </div>
+      </div>
+
       <div class="contact-form__area contact-form__bg contact-form__space"
          data-background="assets/img/contact/contact-bg.jpg">
          <div class="contact-form__shape">
@@ -655,22 +673,25 @@
                            data-wow-delay=".3s">Contactez-nous maintenant</h4>
                         <div class="contact-form-title-shape-wrap p-relative wow tpfadeUp" data-wow-duration=".9s"
                            data-wow-delay=".5s">
-                           <h2 class="section-title text-white">Entrez en questions 
+                           <h2 class="section-title text-white">Entrez en questions
                               <span>Touchez.</span>
                            </h2>
 
                         </div>
                      </div>
                      <div class="contact-form__content-box">
-                        <p class=" wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".7s">Il est délivré gratuitement dans les cabinets médicaux ou à domicile avec délai <br>
+                        <p class=" wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".7s">Il est délivré
+                           gratuitement dans les cabinets médicaux ou à domicile avec délai <br>
                            l'achat de services d'un montant supérieur à 40 $ par personne. <br> glace
                            dans une ambiance surélevée.</p>
                         <div class="contact-form__content-list wow tpfadeUp" data-wow-duration=".9s"
                            data-wow-delay=".9s">
                            <ul>
-                              <li><i class="far fa-check-square"></i>Business sagittis leo pour le meilleur appel médical.
+                              <li><i class="far fa-check-square"></i>Business sagittis leo pour le meilleur appel
+                                 médical.
                               </li>
-                              <li><i class="far fa-check-square"></i>Nous donnons un coup de main à l'hôpital de gestion..</li>
+                              <li><i class="far fa-check-square"></i>Nous donnons un coup de main à l'hôpital de
+                                 gestion..</li>
                            </ul>
                         </div>
                         <div class="contact-form__appointment d-flex align-items-center wow tpfadeUp"
@@ -699,20 +720,21 @@
                         <i>disponible 24/7 Support health </i>
                      </div>
                      <form action="https://formspree.io/f/xdovqgok" method="POST">
-                        <input type="text" name="nom" placeholder="Votre nom*" >
-                       
-                        <input type="email" name="phone" placeholder="votre email*" >
+                        <input type="text" name="nom" placeholder="Votre nom*">
 
-                        <input type="text" name="subject" placeholder="subject*" >
-                        <textarea class="form-control" name="message" placeholder="Ecrire un message" id="floatingTextarea2" style="height: 100px" ></textarea>
+                        <input type="email" name="phone" placeholder="votre email*">
+
+                        <input type="text" name="subject" placeholder="subject*">
+                        <textarea class="form-control" name="message" placeholder="Ecrire un message"
+                           id="floatingTextarea2" style="height: 100px"></textarea>
                         <div class="contact-form__btn pt-20">
-                           <button type="submit" class="main-btn blue-bg tp-btn-hover alt-color-white" >ENVOYER
+                           <button type="submit" class="main-btn blue-bg tp-btn-hover alt-color-white">ENVOYER
                               <b></b>
                               <i class="far fa-plus"></i>
                            </button>
                         </div>
                      </form>
-                     
+
                   </div>
                </div>
             </div>
@@ -720,7 +742,7 @@
       </div>
 
       <div class="cta__area cta__space z-index p-relative">
-         
+
          <div class="container mt-100">
             <div class="cta__bg">
             </div>
@@ -814,7 +836,8 @@
                      <div class="col-xl-12">
                         <div class="copyright__text text-center wow tpfadeUp" data-wow-duration=".9s"
                            data-wow-delay="1s">
-                           <span>© 2023 Tous droits réservés par Clinique du sourire <a href="https://icf.ma">ICF</a></span>
+                           <span>© 2023 Tous droits réservés par Clinique du sourire <a
+                                 href="https://icf.ma">ICF</a></span>
                         </div>
                      </div>
                   </div>
@@ -843,26 +866,25 @@
    <script src="assets/js/ajax-form.js"></script>
    <script src="assets/js/main.js"></script>
    <script>function searchInPage() {
-      var searchTerm = document.getElementById('searchInput').value; // Get the search term from an input field (change 'searchInput' to the ID of your input field)
-    
-      var pageContent = document.body.innerHTML; // Get the content of the entire web page
-    
-      var regex = new RegExp(searchTerm, 'gi'); // Create a regular expression with the search term and 'gi' for global case-insensitive search
-    
-      var matches = pageContent.match(regex); // Perform the search
-    
-      if (matches) {
-        // If matches are found
-        var searchCount = matches.length;
-        alert('Found ' + searchCount + ' matches for "' + searchTerm + '"');
-      } else {
-        // If no matches are found
-        alert('No matches found for "' + searchTerm + '"');
+         var searchTerm = document.getElementById('searchInput').value; // Get the search term from an input field (change 'searchInput' to the ID of your input field)
+
+         var pageContent = document.body.innerHTML; // Get the content of the entire web page
+
+         var regex = new RegExp(searchTerm, 'gi'); // Create a regular expression with the search term and 'gi' for global case-insensitive search
+
+         var matches = pageContent.match(regex); // Perform the search
+
+         if (matches) {
+            // If matches are found
+            var searchCount = matches.length;
+            alert('Found ' + searchCount + ' matches for "' + searchTerm + '"');
+         } else {
+            // If no matches are found
+            alert('No matches found for "' + searchTerm + '"');
+         }
       }
-    }
-    </script>
+   </script>
 </body>
 
-<!-- Mirrored from ordainit.com/Medinosi/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 07 Jun 2023 09:11:36 GMT -->
 
 </html>
