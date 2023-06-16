@@ -207,6 +207,18 @@
   margin-top: -120px;
 }
 
+.big-title{
+  color: #000 !important;
+}
+
+.text-area{
+  border-radius: 5px;
+}
+
+.text-area::placeholder{
+  display: flex;
+  margin-bottom: 5px;
+}
 
 
 @media (min-width: 1400px) {
@@ -4432,8 +4444,11 @@ input[type=color] {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  background-color: rgba(8, 30, 65, 0.4);
+  height: 550px;
+  background-image: url(../img/slide02.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 .slider__content-box {
   padding-top: 225px;
@@ -5492,27 +5507,6 @@ input[type=color] {
   .slider-5__video span {
     font-size: 14px;
   }
-}
-
-.slider-active .slick-dots {
-  position: absolute;
-  top: 50%;
-  right: 50px;
-  transform: translateY(-50%);
-}
-.slider-active .slick-dots li {
-  list-style-type: none;
-}
-.slider-active .slick-dots li.slick-active button {
-  background-color: #F28500;
-}
-.slider-active .slick-dots li button {
-  height: 12px;
-  width: 12px;
-  border-radius: 50%;
-  background-color: #F28500;
-  font-size: 0;
-  transition: 0.3s;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px), only screen and (min-width: 576px) and (max-width: 767px) {
   .slider-active .slick-dots li button {
@@ -13189,7 +13183,10 @@ input[type=color] {
 }
 @media (max-width: 767px) {
   .contact-form__wrapper-bg {
-    padding: 31px 15px 45px 15px;
+    padding: 129px 15px 45px 15px;
+  }
+  .text-area::placeholder{
+    columns: 0;
   }
 }
 .contact-form__wrapper-box form input {

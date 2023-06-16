@@ -5571,46 +5571,67 @@
     "undefined" == typeof e && (C.jQuery = C.$ = S),
     S
   );
+
+  
 });
-
-
-
-const translations = {
-  fr: {
-    acceuil : 'Acceuil',
-    propos : 'A Propos',
-    service : 'services',
-    rendez : 'Rendez-vous',
-    langues : 'Langues',
-    selectLanguage : 'languages',
-    french : 'french',
-    arabic  : 'arabic',
-  },
-  ar: {
-    acceuil : 'الصفحة الرئيسية',
-    propos : 'معلومات عنا',
-    service : 'خدمات',
-    rendez : 'ميعاد',
-    langues : 'اللغات',
-    selectLanguage : 'اللغة',
-    french : 'اللغة الفرنسية',
-    arabic  : 'اللغة العربية',
-  },
-};
-
 $(document).ready(function() {
-  const languageSelector = $("select");
+ // translations function start
+  $('#language-select').on('change', function() {
+      var selectedValue = $(this).value();
+      var aboutUsText = $('.itoffcanvas__text');
 
-  languageSelector.on("change", function(event) {
-    setLanguage(event.target.value);
+
+      if (selectedValue === 'arabic') {
+          aboutUsText.text("نهجنا فريد من نوعه حول العمل المعروف ونحن نعلم أنه لا يعمل مع العوامل التي تم التحقق منها في اللعب.");
+              
+      } else {
+          aboutUsText.text(" Notre approche est unique autour du travail connu et nous savons qu'il ne fonctionne pas avec des facteurs vérifiés en jeu."); 
+      
+
+          // Corrected capitalization
+      }
   });
-
-  const setLanguage = function(language) {
-    const elements = $("[data-translations]");
-    elements.each(function() {
-      const translationKey = $(this).attr("data-translations");
-      $(this).text(translations[language][translationKey]);
-    });
-  };
 });
+
+
+
+
+// const translations = {
+//   fr: {
+//     acceuil : 'Acceuil',
+//     propos : 'A Propos',
+//     service : 'services',
+//     rendez : 'Rendez-vous',
+//     langues : 'Langues',
+//     selectLanguage : 'languages',
+//     french : 'french',
+//     arabic  : 'arabic',
+//   },
+//   ar: {
+//     acceuil : 'الصفحة الرئيسية',
+//     propos : 'معلومات عنا',
+//     service : 'خدمات',
+//     rendez : 'ميعاد',
+//     langues : 'اللغات',
+//     selectLanguage : 'اللغة',
+//     french : 'اللغة الفرنسية',
+//     arabic  : 'اللغة العربية',
+//   },
+// };
+
+// $(document).ready(function() {
+//   const languageSelector = $("select");
+
+//   languageSelector.on("change", function(event) {
+//     setLanguage(event.target.value);
+//   });
+
+//   const setLanguage = function(language) {
+//     const elements = $("[data-translations]");
+//     elements.each(function() {
+//       const translationKey = $(this).attr("data-translations");
+//       $(this).text(translations[language][translationKey]);
+//     });
+//   };
+// });
 
